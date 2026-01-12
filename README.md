@@ -3,10 +3,7 @@
 A simple yet powerful image classification application that can distinguish between dogs and cats using a Convolutional Neural Network (CNN) built with TensorFlow/Keras.
 
 ## Live
-Live Link: ```bash
-   git clone https://github.com/yourusername/dog-cat-classifier.git
-   cd dog-cat-classifier
-   ```
+Live Link: https://8501-01kepzqvw5qdzma69z30wqp2w4.cloudspaces.litng.ai
 
 ## ✨ Features
 

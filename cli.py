@@ -11,7 +11,7 @@ def predict_image(img_path, model_path):
     
     Args:
         img_path: Path to the image file
-        model_path: Path to the trained model (.h5 file)
+        model_path: Path to the trained model (.keras file)
     """
     # Check if image exists
     if not os.path.exists(img_path):
@@ -51,7 +51,7 @@ if __name__ == "__main__":
     # Set up argument parser
     parser = argparse.ArgumentParser(description='Predict if an image contains a dog or cat')
     parser.add_argument('image_path', type=str, help='Path to the image file')
-    parser.add_argument('--model', type=str, default='dog_cat_final_model.keras', 
+    parser.add_argument('--model', type=str, default='dog_cat_final_model1.keras', 
                         help='Path to the model file (default: dog_cat_cnn_model.h5)')
     
     # Parse arguments

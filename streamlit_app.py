@@ -4,14 +4,17 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 from PIL import Image
 import io
+import os
 
 # Set page title
 st.title("Dog vs Cat Classifier")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "dog_cat_final_model1.keras")
 
 # Load the model
 @st.cache_resource
 def load_classification_model():
-    return load_model('dog_cat_final_model.keras')
+    return load_model(MODEL_PATH)
 
 try:
     model = load_classification_model()

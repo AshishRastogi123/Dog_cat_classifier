@@ -1,0 +1,6 @@
+.vscode/
+.idea/
+.lightning_studio/
+__pycache__/
+.ipynb_checkpoints/
+*.keras
